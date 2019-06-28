@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let config = Realm.Configuration(
+            // 设置新的图表版本. 一定要比之前的版本号要大，默认版本号是0.
+            schemaVersion: 0,
+            
+            // 当打开低于上面版本realm数据库时会自动调用这个迁移闭包
+            migrationBlock: { migration, oldSchemaVersion in
+                
+                if (oldSchemaVersion < 0) {
+                    // 不用做任何事，Realm会检测新的属性和移除旧的属性，然后自动更新数据库。
+                }
+        })
+        
+        // 使默认Realm使用新的配置
+        Realm.Configuration.defaultConfiguration = config
+  
         return true
     }
 

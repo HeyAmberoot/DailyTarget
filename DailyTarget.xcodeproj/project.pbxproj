@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7224E50F38EFAE89CA9D33A1 /* Pods_DailyTarget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02138AA903D64CC8448D303 /* Pods_DailyTarget.framework */; };
 		8D8EB03022C4A2E8003F1810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8EB02F22C4A2E8003F1810 /* AppDelegate.swift */; };
 		8D8EB03222C4A2E8003F1810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8EB03122C4A2E8003F1810 /* ViewController.swift */; };
 		8D8EB03522C4A2E8003F1810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8EB03322C4A2E8003F1810 /* Main.storyboard */; };
 		8D8EB03722C4A2EA003F1810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8EB03622C4A2EA003F1810 /* Assets.xcassets */; };
 		8D8EB03A22C4A2EA003F1810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8EB03822C4A2EA003F1810 /* LaunchScreen.storyboard */; };
+		8DF8AAE422C5F47B00DCD222 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8AAE322C5F47B00DCD222 /* Score.swift */; };
+		8DF8AAE622C5FBE500DCD222 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8AAE522C5FBE500DCD222 /* Target.swift */; };
+		8DF8AAE822C5FDDE00DCD222 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF8AAE722C5FDDE00DCD222 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		169A3EA6CD9B26CD4835B3AE /* Pods-DailyTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyTarget/Pods-DailyTarget.release.xcconfig"; sourceTree = "<group>"; };
 		8D8EB02C22C4A2E8003F1810 /* DailyTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8EB02F22C4A2E8003F1810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D8EB03122C4A2E8003F1810 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		8D8EB03622C4A2EA003F1810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D8EB03922C4A2EA003F1810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D8EB03B22C4A2EA003F1810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DF8AAE322C5F47B00DCD222 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		8DF8AAE522C5FBE500DCD222 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		8DF8AAE722C5FDDE00DCD222 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B02138AA903D64CC8448D303 /* Pods_DailyTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDFE4068A52815C4BBC3BCE8 /* Pods-DailyTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyTarget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyTarget/Pods-DailyTarget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7224E50F38EFAE89CA9D33A1 /* Pods_DailyTarget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		208F5DE9F1D8DFF775C68785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B02138AA903D64CC8448D303 /* Pods_DailyTarget.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46CDDAD2C35B8F69E7802230 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDFE4068A52815C4BBC3BCE8 /* Pods-DailyTarget.debug.xcconfig */,
+				169A3EA6CD9B26CD4835B3AE /* Pods-DailyTarget.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8D8EB02322C4A2E8003F1810 = {
 			isa = PBXGroup;
 			children = (
 				8D8EB02E22C4A2E8003F1810 /* DailyTarget */,
 				8D8EB02D22C4A2E8003F1810 /* Products */,
+				46CDDAD2C35B8F69E7802230 /* Pods */,
+				208F5DE9F1D8DFF775C68785 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +84,9 @@
 		8D8EB02E22C4A2E8003F1810 /* DailyTarget */ = {
 			isa = PBXGroup;
 			children = (
+				8DF8AAE022C5E60E00DCD222 /* BusinessLogicLayer */,
+				8DF8AADF22C5C76F00DCD222 /* PersistenceLayer */,
+				8DF8AADE22C5C75C00DCD222 /* PresentationLayer */,
 				8D8EB02F22C4A2E8003F1810 /* AppDelegate.swift */,
 				8D8EB03122C4A2E8003F1810 /* ViewController.swift */,
 				8D8EB03322C4A2E8003F1810 /* Main.storyboard */,
@@ -64,6 +97,46 @@
 			path = DailyTarget;
 			sourceTree = "<group>";
 		};
+		8DF8AADE22C5C75C00DCD222 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		8DF8AADF22C5C76F00DCD222 /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8DF8AAE222C5F38200DCD222 /* domain */,
+				8DF8AAE122C5F37900DCD222 /* dao */,
+			);
+			path = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		8DF8AAE022C5E60E00DCD222 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		8DF8AAE122C5F37900DCD222 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		8DF8AAE222C5F38200DCD222 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				8DF8AAE322C5F47B00DCD222 /* Score.swift */,
+				8DF8AAE522C5FBE500DCD222 /* Target.swift */,
+				8DF8AAE722C5FDDE00DCD222 /* User.swift */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D8EB03E22C4A2EA003F1810 /* Build configuration list for PBXNativeTarget "DailyTarget" */;
 			buildPhases = (
+				9D15E1DE139327E67C807B2A /* [CP] Check Pods Manifest.lock */,
 				8D8EB02822C4A2E8003F1810 /* Sources */,
 				8D8EB02922C4A2E8003F1810 /* Frameworks */,
 				8D8EB02A22C4A2E8003F1810 /* Resources */,
+				47705CC308E7E3DA72FF38FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +205,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47705CC308E7E3DA72FF38FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DailyTarget/Pods-DailyTarget-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AAInfographics/AAInfographics.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAInfographics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyTarget/Pods-DailyTarget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D15E1DE139327E67C807B2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyTarget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D8EB02822C4A2E8003F1810 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D8EB03222C4A2E8003F1810 /* ViewController.swift in Sources */,
+				8DF8AAE422C5F47B00DCD222 /* Score.swift in Sources */,
+				8DF8AAE622C5FBE500DCD222 /* Target.swift in Sources */,
+				8DF8AAE822C5FDDE00DCD222 /* User.swift in Sources */,
 				8D8EB03022C4A2E8003F1810 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +413,7 @@
 		};
 		8D8EB03F22C4A2EA003F1810 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFE4068A52815C4BBC3BCE8 /* Pods-DailyTarget.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +431,7 @@
 		};
 		8D8EB04022C4A2EA003F1810 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 169A3EA6CD9B26CD4835B3AE /* Pods-DailyTarget.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
