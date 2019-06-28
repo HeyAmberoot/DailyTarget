@@ -1,0 +1,50 @@
+PODS:
+  - AAInfographics (2.0.4)
+  - Alamofire (5.0.0-beta.6)
+  - PromiseKit (6.9.0):
+    - PromiseKit/CorePromise (= 6.9.0)
+    - PromiseKit/Foundation (= 6.9.0)
+    - PromiseKit/UIKit (= 6.9.0)
+  - PromiseKit/CorePromise (6.9.0)
+  - PromiseKit/Foundation (6.9.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.9.0):
+    - PromiseKit/CorePromise
+  - Realm (3.16.2):
+    - Realm/Headers (= 3.16.2)
+  - Realm/Headers (3.16.2)
+  - RealmSwift (3.16.2):
+    - Realm (= 3.16.2)
+
+DEPENDENCIES:
+  - AAInfographics (from `https://github.com/AAChartModel/AAChartKit-Swift.git`)
+  - Alamofire (~> 5.0.0-beta.5)
+  - PromiseKit (~> 6.8)
+  - RealmSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - PromiseKit
+    - Realm
+    - RealmSwift
+
+EXTERNAL SOURCES:
+  AAInfographics:
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+
+CHECKOUT OPTIONS:
+  AAInfographics:
+    :commit: 2a9a66bf5d4eb415bf3496d5c83eb148acfd6b3a
+    :git: https://github.com/AAChartModel/AAChartKit-Swift.git
+
+SPEC CHECKSUMS:
+  AAInfographics: 10f87e06fc007a0adbb05de020e4a2fe3119f8de
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  PromiseKit: 97397236f9e9c443d5b70a941d49cad25160af7a
+  Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
+  RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
+
+PODFILE CHECKSUM: 384796e9de61bd2c3847f7983d4277563cf9b116
+
+COCOAPODS: 1.5.3
